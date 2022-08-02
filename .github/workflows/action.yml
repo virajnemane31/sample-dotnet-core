@@ -27,4 +27,4 @@ jobs:
         uses: virajnemane31/ms-teams-new@v2.0
         with:
           webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}   
-          message: "This is from custom actions created"
+          message: "This is from custom actions created."
