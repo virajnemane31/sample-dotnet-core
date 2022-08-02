@@ -20,7 +20,7 @@ jobs:
       run: dotnet build
   notify:
     - name: send_notification
-      uses: 'virajnemane31/ms-teams-new@v1.0'
+      uses: virajnemane31/ms-teams-new@v1.0
       with:
         webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
         message: "This is from custom actions created"
