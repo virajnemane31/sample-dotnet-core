@@ -27,4 +27,4 @@ jobs:
         uses: virajnemane31/ms-teams-new@v5.0
         with:
           webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}   
-          message: "This is from custom actions created."
+          message: "GitHub Action number ${{ github.run_number }} for ${{ github.repository }} triggered by ${{ github.actor }} is complted with ${{ needs.build.result }} status."
