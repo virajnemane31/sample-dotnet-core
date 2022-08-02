@@ -19,7 +19,7 @@ jobs:
     - name: list current directory
       run: dotnet build
   notify:
-    - name: send notification
+    - name: send_notification
       uses: virajnemane31/ms-teams-new@v1.0
       with:
         webhook_uri: ${{ secrets.MS_TEAMS_WEBHOOK_URI }}
